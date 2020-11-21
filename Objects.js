@@ -235,7 +235,7 @@ const msnacks = new storePage('Snacks');
 msnacks.addItem(msnack1);
 msnacks.addItem(msnack2);
 msnacks.addItem(msnack3);
-const mexican = new store("South end", "Manny's Amigo's", 'Mexican');
+const mexican = new store("South end", "Manny's Amigos", 'Mexican');
 mexican.addPage(wraps);
 mexican.addPage(tacos);
 mexican.addPage(msnacks);
