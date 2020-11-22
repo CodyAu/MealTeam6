@@ -322,7 +322,7 @@ const ksig1 = new storeItem('Galbi',
     2, 5, 6.00);
 const ksig2 = new storeItem('Chuncheon dakgalbi',
     'ksig2.jpg',
-    'Chicken marinated in a sauce of chili paste and other spices, stir-fried with tteok, cabbage, carrots, and sweet potato',
+    'Chicken marinated in chili paste and other spices, stir-fried with tteok, cabbage, carrots, and sweet potato',
     2, 5, 4.50);
 const ksig3 = new storeItem('Bossam',
     'ksig3.jpg',
@@ -406,7 +406,7 @@ const gpasta = new storePage('Pasta');
 gpasta.addItem(gpasta1);
 gpasta.addItem(gpasta2);
 gpasta.addItem(gpasta3);
-const greek = new store('West side','Happy Olympia','Greek');
+const greek = new store('East side','Happy Olympia','Greek');
 greek.addPage(gsigs);
 greek.addPage(gyros);
 greek.addPage(gpasta);
@@ -520,7 +520,7 @@ const pizzas = new storePage('Pizza');
 pizzas.addItem(pizza1);
 pizzas.addItem(pizza2);
 pizzas.addItem(pizza3);
-const italian = new store('East side','The other Bro','Italian');
+const italian = new store('West side','The Other Bro','Italian');
 italian.addPage(ipastas);
 italian.addPage(iseafs);
 italian.addPage(pizzas);

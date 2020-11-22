@@ -20,6 +20,7 @@ body {
     padding: left 0px;
     padding: right 0px;
     border-radius: 15px;
+    display: block;
 } 
 
 /*HOME BUTTON-----------------------------------------
@@ -204,7 +205,7 @@ img{
 #home_page{
     min-width: 1000px;
     min-height: 800px;
-    display: block;
+    display: none;
     text-align: center;
 }
 

@@ -23,7 +23,7 @@ for (i = 0; i < close.length; i++) {
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    if(!ev.target.classList.contains('checkoutBtn')){
+    if(!ev.target.classList.contains('checkoutBtn') && ev.target.classList.contains('order')){
       ev.target.classList.toggle('checked');
     }
   }
