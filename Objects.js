@@ -142,7 +142,6 @@ const grillworks = new store('North end', "Gary's Grill", 'Grillworks');
 grillworks.addPage(dogs);
 grillworks.addPage(burgs);
 grillworks.addPage(sides);
-restList.push(grillworks);
 
 //===========================================
 const fish1 = new storeItem("Halibut",
@@ -182,7 +181,6 @@ const fryworks = new store("East side", "Fryer Tuck's", 'Fryworks');
 fryworks.addPage(fishNchips);
 fryworks.addPage(chicken);
 fryworks.addPage(sides);
-restList.push(fryworks);
 
 //===============================================
 const wrap1 = new storeItem('Chicken Taquitos',
@@ -239,7 +237,6 @@ const mexican = new store("South end", "Manny's Amigos", 'Mexican');
 mexican.addPage(wraps);
 mexican.addPage(tacos);
 mexican.addPage(msnacks);
-restList.push(mexican);
 
 //===========================================
 const ramen1 = new storeItem('Shoyu ramen',
@@ -296,7 +293,6 @@ const japan = new store('West side', 'Hungry Lotus', 'Japanese');
 japan.addPage(ramen);
 japan.addPage(sushi);
 japan.addPage(jsides);
-restList.push(japan);
 
 //========================================================
 const kstew1 = new storeItem('Hangover stew',
@@ -353,7 +349,6 @@ const korean = new store('North end','Happy Dumpling','Korean');
 korean.addPage(kstews);
 korean.addPage(ksigs);
 korean.addPage(kseaf);
-restList.push(korean);
 
 //==================================================
 const gsig1 = new storeItem('Souvlaki',
@@ -410,7 +405,6 @@ const greek = new store('East side','Happy Olympia','Greek');
 greek.addPage(gsigs);
 greek.addPage(gyros);
 greek.addPage(gpasta);
-restList.push(greek);
 
 //=================================================
 const cnoodle1 = new storeItem('Chicken chow mein',
@@ -467,7 +461,6 @@ const chinese = new store('South end','Yin and Yummy','Chinese');
 chinese.addPage(cnoodles);
 chinese.addPage(csoups);
 chinese.addPage(crices);
-restList.push(chinese);
 
 //==============================================
 const ipasta1 = new storeItem('Toasted ravioli',
@@ -524,7 +517,6 @@ const italian = new store('West side','The Other Bro','Italian');
 italian.addPage(ipastas);
 italian.addPage(iseafs);
 italian.addPage(pizzas);
-restList.push(italian);
 
 //==================================================
 const pastry1 = new storeItem('Macaroons',
@@ -581,7 +573,6 @@ const french = new store('North end','Grumpy Baugette','French');
 french.addPage(pastries);
 french.addPage(fsoups);
 french.addPage(fsigs);
-restList.push(french);
 
 //===============================================
 const isnack1 = new storeItem('Pakora',
@@ -638,4 +629,14 @@ const indian = new store('East side','Bollywood Spice','Indian');
 indian.addPage(isnacks);
 indian.addPage(icurrys);
 indian.addPage(irices);
+
 restList.push(indian);
+restList.push(french);
+restList.push(italian);
+restList.push(chinese);
+restList.push(greek);
+restList.push(korean);
+restList.push(japan);
+restList.push(mexican);
+restList.push(fryworks);
+restList.push(grillworks);
