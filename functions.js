@@ -80,7 +80,7 @@ var setup = function() {
         circle.innerHTML = "Korean";
         break;
       case 4:
-        circle.innerHTML = "Japenese";
+        circle.innerHTML = "Japanese";
         break;
       case 5:
         circle.innerHTML = "Mexican";
