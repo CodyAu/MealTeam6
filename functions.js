@@ -1,3 +1,9 @@
+//Allow home button to bring you to the home page
+var homeButton = document.getElementById("home_b");
+homeButton.addEventListener('click', function(h){
+	setPage("home_page");
+});
+
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByClassName("order");
 var i;
@@ -160,7 +166,6 @@ function clearMenuPage() {
   // clear menu-categorie-item objects
   $(".menu-categorie-item").remove();
 }
-
 
 
 
