@@ -572,7 +572,7 @@ const fsigs = new storePage('Entrees');
 fsigs.addItem(fsig1);
 fsigs.addItem(fsig2);
 fsigs.addItem(fsig3);
-const french = new store('North end','Grumpy Baugette','French');
+const french = new store('North end','Grumpy Baguette','French');
 french.addPage(pastries);
 french.addPage(fsoups);
 french.addPage(fsigs);

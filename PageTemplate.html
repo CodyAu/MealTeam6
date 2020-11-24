@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="StyleSheet.css">
     <link rel="stylesheet" href="list_options.css">
     <link rel="stylesheet" href="MenuPage.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="mapDetails.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -23,7 +25,9 @@
           
         <div id="searchName"> 
             <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search Name...">
+			<div class="ui-widget">
+			  <input id="searchStore" type="text" placeholder="Search Name...">
+			</div>
         </div> 
           
         <div id="searchAddr"> 
@@ -169,6 +173,7 @@
 
     <script src="Objects.js"></script>
     <script src="mapFunction.js"></script>
+	<script src="searchFunction.js"></script>
     <script src="functions.js"></script>
 </body>
 

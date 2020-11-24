@@ -16,7 +16,7 @@ for (i = 0; i < myRestList.length; i++) {
         li.classList.toggle('rclicked');
         myMarkers[li.id].classList.toggle('mclicked');
 
-        currentStore = restList[mark.id]; // set current store
+        currentStore = restList[li.id]; // set current store
 
     }
 }
