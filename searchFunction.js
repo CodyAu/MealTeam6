@@ -1,15 +1,32 @@
-var availableTags = [];
-function setupTags()
+var availableStoreTags = [];
+var availableLocationTags = [];
+
+function setupStoreTags()
 {
 	for(rest of restList)
 	{
-		availableTags.push(rest.getName());
+		availableStoreTags.push(rest.getName());
 	}
 }
-setupTags();
+setupStoreTags();
+
+function setupLocationTags()
+{
+	for(rest of restList)
+	{
+		availableLocationTags.push(rest.getLoc());
+	}
+}
+setupLocationTags();
 
 $( function() {
     $( "#searchStore" ).autocomplete({
-      source: availableTags
+      source: availableStoreTags
     });
   } );
+
+$( function() {
+  $( "#searchLocation" ).autocomplete({
+    source: availableLocationTags
+  });
+} );
