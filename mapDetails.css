@@ -19,6 +19,7 @@
 
 .marker:hover{
     background-color: lightgrey;
+    cursor: pointer;
 }
 
 .mclicked{
