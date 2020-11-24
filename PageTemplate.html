@@ -3,9 +3,12 @@
 <head>
     <title>Meal Team 6</title>
     <style></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="StyleSheet.css">
     <link rel="stylesheet" href="list_options.css">
+    <link rel="stylesheet" href="MenuPage.css">
     <link rel="stylesheet" href="OrderSpecifics.css">
     <link rel="stylesheet" href="mapDetails.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +52,7 @@
         </div>
     </div>
 
-    <div id="home_page">
+    <div id="home_page" class="template-page">
         <div id="ring"></div>
         <div class="footer">
             <div class="about">
@@ -61,7 +64,7 @@
         </div>
     </div>
 
-    <div id="restListPage">
+    <div id="restListPage" class="template-page">
         <div id="map-container">
             <img id="map-img" src="map.jpg">
             <div class="marker" id="0" style="top: 200px; right: 50px;">
@@ -108,6 +111,59 @@
                 <li class="rlist" id="8">Fryer Tuck's --- <br>Fryworks - East side</li>
                 <li class="rlist" id="9">Gary's Grill --- <br>Grillworks - North end</li>
             </ul>
+        </div>
+    </div>
+
+
+    <!-- menu page HTML !-->
+    <div id="menuPage" class="template-page">
+        <div id="menuTop">
+
+            <div id="menuStoreLogoWrapper">
+                <div id="menuStoreLogo">
+                    <img src="https://images.template.net/wp-content/uploads/2016/04/22123121/Cool-Restaurant-Logo-Download.jpg" alt="Restaurant Logo" title="Top Restaurant Logo">
+                </div>
+            </div>
+
+            <div id="menuSpecials">
+                <h1>Today's Specials</h1>
+                <h2 class="freeDeliveryBlurb">Free Delivery Over $20</h2>
+                <h2 id="itemOneMenu">⚫ Item One</h2>
+                <h2 id="itemTwoMenu">⚫ Item Two</h2>
+            </div>
+        </div>
+
+
+        <div class="menu-grid-container">
+
+            <!-- Categories side bar -->
+            <div class="menu-categories">
+                <section class="menu-categories-back">
+                    <h1>Categories</h1>
+                    <i class="fa fa-arrow-left fa-5x"></i>
+                    <h2>Go Back</h2>
+                </section>
+
+                <!-- Dynamically inserted menu-categories-item sections !-->
+            </div>
+
+
+            <! -- Category menu view, displaying individual items and options -->
+            <div class="menu-category-view">
+                <section>
+                    <div class="menu-category-view-header">
+                        <h1>
+                            Category Header
+                        </h1>
+                    </div>
+
+                    <! -- Menu items inserted by JS -->
+
+                    <div class="menu-category-flex">
+
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 

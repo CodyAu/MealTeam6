@@ -1,4 +1,4 @@
-var restList = new [];
+var restList = [];
 
 // Creating store objects
 class store {
@@ -25,6 +25,9 @@ class store {
     }
     getNumPages() {
         return this.menuPages.length;
+    }
+    getStoreLogo() {
+        return "https://images.template.net/wp-content/uploads/2016/04/22123121/Cool-Restaurant-Logo-Download.jpg"; // template
     }
 };
 

@@ -114,3 +114,59 @@ var setup = function() {
 };
 
 setup();
+
+// sets the page to the given page
+function setPage(page) {
+  // close all pages
+  $(".template-page").hide();
+  // open correct page
+  $("#" + page).show();
+}
+
+
+// Opens the menu page for the given store
+function openMenuPage(store) {
+  clearMenuPage(); // close any other page
+
+  // for each store page
+  for (page of store.getPages()) {
+    let category = page.getCat();
+
+    // create the html object menu-categories-item objects
+    let section = document.createElement("section");
+    let sectionPage = page;
+    section.innerHTML = `<h1>${category}</h1>`;
+    section.className = "menu-categories-item";
+
+    $(section).click(function() {
+      $(".menu-category-item").remove(); // remove all other menu-category-items
+
+      for (item of sectionPage.getItems()) {
+        // make new menu-category-items
+        let menuCategoryItem = document.createElement("div");
+        menuCategoryItem.className = "menu-category-item";
+        menuCategoryItem.innerHTML = `<h1>${item.getItemName()}</h1>`;
+        $(".menu-category-flex").append(menuCategoryItem);
+      }
+    });
+
+    $(".menu-categories").append(section);
+  }
+
+  setPage("menuPage"); // open the page
+}
+
+function clearMenuPage() {
+  // clear menu-categorie-item objects
+  $(".menu-categorie-item").remove();
+}
+
+
+
+
+// lazy dev function
+function _print_pages() {
+  console.log("home_page");
+  console.log("restListPage");
+  console.log("menuPage");
+}

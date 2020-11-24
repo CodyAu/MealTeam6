@@ -1,6 +1,9 @@
 var myRestList = document.getElementsByClassName("rlist");
 var myMarkers = document.getElementsByClassName("marker");
 
+
+let currentStore = null; // openMenuPage(currentStore); to open the store page
+
 var i;
 var n;
 for (i = 0; i < myRestList.length; i++) {
@@ -12,6 +15,9 @@ for (i = 0; i < myRestList.length; i++) {
         var li = this;
         li.classList.toggle('rclicked');
         myMarkers[li.id].classList.toggle('mclicked');
+
+        currentStore = restList[mark.id]; // set current store
+
     }
 }
 
@@ -26,5 +32,9 @@ for (m = 0; m < myMarkers.length; m++) {
         var mark = this;
         mark.classList.toggle('mclicked');
         myRestList[mark.id].classList.toggle('rclicked');
+
+
+        currentStore = restList[mark.id]; // set current store
+        openMenuPage(currentStore);
     }
 }
