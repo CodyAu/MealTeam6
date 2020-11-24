@@ -1,6 +1,6 @@
 //Allow home button to bring you to the home page
 var homeButton = document.getElementById("home_b");
-homeButton.addEventListener('click', function(h){
+homeButton.addEventListener('click', function(hp){
 	setPage("home_page");
 });
 
