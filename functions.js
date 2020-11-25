@@ -71,7 +71,7 @@ var setup = function() {
       //create element, add it to the array, and assign it's coordinates trigonometrically.
       //Then add it to the "main" div
     var circle = document.createElement('div'); 
-    circle.className = 'oval number'+i;
+    circle.className = 'oval';
     switch(i){
       case 0:
         circle.innerHTML = "Italian";
