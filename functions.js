@@ -62,6 +62,15 @@ function addToCart(store, item) {
     span.onclick = function () {
         var div = this.parentElement;
         div.style.display = "none";
+
+        // remove from checkout map
+        let array = checkout.get(store);
+        let index = array.indexOf(item);
+        if (index !== -1) {
+            array.splice(index, 1);
+        }
+        console.log(array);
+
     }
 
     $(li).insertBefore(".checkoutBtn");
@@ -149,6 +158,8 @@ function setPage(page) {
 function openMenuPage(store) {
     let storeKeep = store;
     clearMenuPage(); // close any other page
+
+    $("#restaurantLogo").html(store.getName());
 
     // for each store page
     for (page of store.getPages()) {

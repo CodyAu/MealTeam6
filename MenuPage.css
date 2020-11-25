@@ -64,8 +64,8 @@
     left: -8em;
 }
 
-#menuStoreLogo > img {
-    margin-left: 6em;
+#menuStoreLogo > h1 {
+    margin-left: 4em;
 }
 
 #menuSpecials {
