@@ -35,10 +35,12 @@ for (m = 0; m < myMarkers.length; m++) {
     }
 }
 
+
 var a;
 for (a = 0; a < myMarkers.length; a++) {
     myMarkers[a].onclick = function markerSel() {
         var mark = this;
+
         currentStore = restList[mark.id]; // set current store
         openMenuPage(currentStore);
     }

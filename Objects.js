@@ -168,11 +168,11 @@ const chkn1 = new storeItem('Chicken nuggets',
     'chkn1.jpg',
     'Savory breaded chicken nuggets.',
     2, 4, 3.00);
-const chkn2 = new storePage('Chicken fingers',
+const chkn2 = new storeItem('Chicken fingers',
     'chkn2.jpg',
     'Crispy breaded chicken tenders.',
     2, 4, 4.00);
-const chkn3 = new storePage('Fried chicken',
+const chkn3 = new storeItem('Fried chicken',
     'chkn3.jpg',
     'Hearty crispy breaded chicken.',
     2, 4, 5.00);
