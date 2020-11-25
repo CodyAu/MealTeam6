@@ -91,15 +91,15 @@ class storeItem {
 // 5 - pork/beef/shrimp dumplings
 // 6 - cheese toast/garlic bread/no bread
 const hotDog1 = new storeItem('Hot Dog',
-    'dog1.jpg',
+    'hotDog1.jpg',
     'A footlong all beef hot dog on a sesame seed bun.'
     , 0, 1, 3.00);
 const hotDog2 = new storeItem('Bacon Cheese Dog',
-    'dog2.jpg',
+    'hotDog2.jpg',
     'Crispy bacon and cheddar cheese on our signature hot dog.',
     0, 1, 4.50);
 const hotDog3 = new storeItem('Chilidog',
-    'dog3.jpg',
+    'hotDog3.jpg',
     'Homemade hearty chili on our signature hot dog.',
     0, 1, 4.50);
 const dogs = new storePage('Dogs');
@@ -108,15 +108,15 @@ dogs.addItem(hotDog2);
 dogs.addItem(hotDog3);
 
 const burger1 = new storeItem('Hamburger',
-    'burg1.jpg',
+    'burger1.jpg',
     'Hearty beef patty on a brioche bun.',
     0, 1, 4.00);
 const burger2 = new storeItem('Bacon Cheeseburger',
-    'burg2.jpg',
+    'burger2.jpg',
     'Savory maple bacon with jack cheese on our beef patty.',
     0, 1, 5.00);
 const burger3 = new storeItem('Sloppy Joe',
-    'burg3.jpg',
+    'burger3.jpg',
     'Homestyle pork chili on a toasted bun.',
     0, 1, 4.00);
 const burgs = new storePage('Burgers');
