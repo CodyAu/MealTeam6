@@ -80,7 +80,8 @@ function addToCart(store, item) {
 var main = document.getElementById('ring');
 var circleArray = [];
 var setup = function () {
-    setPage("restListPage");
+    setPage("home_page"); // goto home page
+
     // checkout listener
     $(".checkoutBtn").click(function () {
         setPage("checkoutPage");
@@ -141,6 +142,24 @@ var setup = function () {
         main.appendChild(circleArray[i]);
 
     }
+
+    // ring oval button listener
+    $(".oval").click(function() {
+        let html = $(this).html();
+
+        let forEach = function() {
+            if (restList[$(this).attr('id')].getType() !== html) {
+                $(this).hide();
+            } else {
+                $(this).show();
+            }
+        };
+
+        $(".marker").each(forEach);
+        $(".rlist").each(forEach);
+
+        setPage("restListPage");
+    });
 };
 
 setup();
@@ -186,7 +205,6 @@ function openMenuPage(store) {
 
                 // set add to cart listener
                 $(`#add${item.getItemName().replace(/\s+/g, '')}ToCart`).click(function () {
-                    console.log(`adding ${keepItem.getItemName()} to cart!`);
                     addToCart(store, keepItem);
                 });
             }
