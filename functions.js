@@ -82,6 +82,15 @@ var circleArray = [];
 var setup = function () {
     setPage("home_page"); // goto home page
 
+    // show all restaurants click listener
+    $("#showAllRest").click(function() {
+        $(".marker").show(); // show all markers
+        $(".rlist").show(); // show all list items
+       setPage("restListPage"); // switch page
+    });
+
+
+
     // checkout listener
     $(".checkoutBtn").click(function () {
         setPage("checkoutPage");
