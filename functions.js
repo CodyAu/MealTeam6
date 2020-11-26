@@ -141,8 +141,8 @@ var setup = function () {
 
         circleArray.push(circle);
 
-        circleArray[i].posx = 450 + Math.round(((350 * Math.cos((i * (2 * Math.PI / 10)) - (Math.PI / 10))))) + 'px';
-        circleArray[i].posy = 350 + Math.round((200 * Math.sin((i * (2 * Math.PI / 10)) - (Math.PI / 10)))) + 'px';
+        circleArray[i].posx = (screen.width / 2) + Math.round(((350 * Math.cos((i * (2 * Math.PI / 10)) - (Math.PI / 10))))) + 'px';
+        circleArray[i].posy = (screen.height / 3) + Math.round((200 * Math.sin((i * (2 * Math.PI / 10)) - (Math.PI / 10)))) + 'px';
 
         circleArray[i].style.position = "fixed";
         circleArray[i].style.top = circleArray[i].posy;
