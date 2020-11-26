@@ -214,13 +214,12 @@ img{
 #home_page #showAllRest  {
     background: #000000bd;
     padding: 1em;
-    float: right;
     display: inline-block;
     border: solid white .25em;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 10%;
-    margin-right: 5%;
+    margin-left: 8%;
 }
 
 .footer{
