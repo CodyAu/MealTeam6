@@ -217,9 +217,9 @@ img{
     display: inline-block;
     border: solid white .25em;
     color: white;
-    font-size: 1.5em;
-    margin-top: 10%;
-    margin-left: 8%;
+    font-size: 0.75em;
+    margin-top: 2.5%;
+    margin-left: -75%;
 }
 
 .footer{
@@ -250,8 +250,8 @@ div#ring {
     bottom: unset;
     position: absolute;
     align-items: center;
-    left: 50%;
-    top: 50%;
+    left: 60%;
+    top: 60%;
 }
   
 div.oval {
