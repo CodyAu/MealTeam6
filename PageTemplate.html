@@ -167,20 +167,37 @@
     </div>
 
     <div id="checkoutPage" class="template-page">
-        <div class="deliveryDetails"></div>
+        <div class="deliveryDetails">
+            <div class="symbol" style="margin-top: 2%;">
+                <i class="fa fa-map-marker" style="font-size: 50px;"></i>
+            </div>
+            <div id="location">
+                <input type="text" placeholder="Deliver to..." 
+                style="font-size: 40px; background: transparent; color: lightgrey;
+                width: 100%; border: none;">
+            </div>
+            <div class="symbol">
+                <i class="fa fa-clock-o" style="font-size: 50px;"></i>
+            </div>
+            <div id="readyTime"></div>
+        </div>
         <div class="deliveryMethod">
             <div class="methodChoice">Delivery</div>
             <div class="methodChoice">Take-out</div>
         </div>
+        <div id="orderSummary">
+            <div class="breakdown"></div>
+            <div class="total"></div>
+            <div class="payment">Pay with Card</div>
+        </div>
         <div class="orderView"></div>
-        <div id="orderSummary"></div>
     </div>
 
-    <div id="checkoutPage" class="template-page"></div>
     <script src="Objects.js"></script>
     <script src="mapFunction.js"></script>
 	<script src="searchFunction.js"></script>
     <script src="functions.js"></script>
+    <script src="checkout.js"></script>
 </body>
 
 </html>
