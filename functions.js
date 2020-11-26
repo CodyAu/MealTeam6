@@ -81,7 +81,10 @@ function addToCart(store, item) {
 function setItemsInCart(items) {
     itemsInCart = items;
     // change image
-    $("#cart > img").attr('src', `cart${itemsInCart}.png`);
+
+    if (itemsInCart >= 0 && itemsInCart <= 6) {
+        $("#cart > img").attr('src', `cart${itemsInCart}.png`);
+    }
 }
 
 // Show list items along a circle
