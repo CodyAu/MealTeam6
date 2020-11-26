@@ -1,4 +1,5 @@
 let checkout = new Map(); // checkout map object, maps store object to an array of checkout item objects selected from that store
+let itemsInCart = 0;
 
 //Allow home button to bring you to the home page
 var homeButton = document.getElementById("home_b");
@@ -69,11 +70,18 @@ function addToCart(store, item) {
         if (index !== -1) {
             array.splice(index, 1);
         }
-        console.log(array);
 
+        setItemsInCart(itemsInCart - 1);
     }
 
     $(li).insertBefore(".checkoutBtn");
+    setItemsInCart(itemsInCart + 1);
+}
+
+function setItemsInCart(items) {
+    itemsInCart = items;
+    // change image
+    $("#cart > img").attr('src', `cart${itemsInCart}.png`);
 }
 
 // Show list items along a circle
