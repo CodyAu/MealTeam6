@@ -82,7 +82,7 @@ function setItemsInCart(items) {
     itemsInCart = items;
     // change image
 
-    if (itemsInCart >= 0 && itemsInCart <= 6) {
+    if (itemsInCart >= 0 && itemsInCart <= 7) {
         $("#cart > img").attr('src', `cart${itemsInCart}.png`);
     }
 }
