@@ -1,12 +1,9 @@
 #checkoutPage{
-    width: 100%;
-    height: 85%;
-    top: 90px;
-    display: block;
-    position: fixed;
     background-color: rgba(0, 0, 0, 0.507);
     border: 3px solid white;
     border-radius: 15px;
+    padding-bottom: 1em;
+    min-height: 89vh;
 }
 
 .deliveryDetails{
@@ -40,6 +37,7 @@
 }
 
 #readyTime{
+    color: white;
     font-size: 40px;
     height: 35%;
     width: 75%;
@@ -103,13 +101,20 @@
 .breakdown{
     width: 100%;
     height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .total{
     width: 100%;
     top: 70%;
     height: 20%;
-    background-color: lightgray;
+    background-color: #d3d3d378;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .payment{
@@ -120,4 +125,18 @@
     top: 90%;
     height: 10%;
     background-color: gray;
+}
+
+.results-table tr {
+    font-size: 1.85vmax;
+    color: white;
+}
+
+.results-table tr label {
+    padding: .6em;
+}
+
+.pad-white {
+    color: white;
+    padding: .5vmax;
 }

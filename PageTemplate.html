@@ -186,8 +186,51 @@
             <div class="methodChoice">Take-out</div>
         </div>
         <div id="orderSummary">
-            <div class="breakdown"></div>
-            <div class="total"></div>
+            <div class="breakdown">
+                <table class="results-table">
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <label>Subtotal</label>
+                        </td>
+                        <td>
+                            <label id="checkoutPrice">$15</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>GST + PST</label>
+                        </td>
+                        <td>
+                            <label id="checkoutPriceTax">Subtotal</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Total Cost</label>
+                        </td>
+                        <td>
+                            <div>
+                                <label id="checkoutPriceTotal">Subtotal</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="freeShipping">
+                        <td></td>
+                        <td colspan="3">
+                            <label>Free Shipping!</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Payment Options !-->
+            <div class="total">
+                <i class="fa fa-cc-paypal fa-5x pad-white"></i>
+                <i class="fa fa-cc-visa fa-5x pad-white"></i>
+                <i class="fa fa-cc-mastercard fa-5x pad-white"></i>
+                <i class="fa fa-cc-discover fa-5x pad-white"></i>
+            </div>
             <div class="payment">Pay with Card</div>
         </div>
         <div class="orderView"></div>

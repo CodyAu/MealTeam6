@@ -105,6 +105,7 @@ var setup = function () {
     // checkout listener
     $(".checkoutBtn").click(function () {
         setPage("checkoutPage");
+        drawCheckout(checkout);
     });
 
     // click listener for menu page back button
@@ -167,6 +168,7 @@ var setup = function () {
     $(".oval").click(function() {
         let html = $(this).html();
 
+        // hide all invalid types
         let forEach = function() {
             if (restList[$(this).attr('id')].getType() !== html) {
                 $(this).hide();
@@ -174,7 +176,6 @@ var setup = function () {
                 $(this).show();
             }
         };
-
         $(".marker").each(forEach);
         $(".rlist").each(forEach);
 
@@ -217,7 +218,7 @@ function openMenuPage(store) {
                 let menuCategoryItem = document.createElement("div");
                 let keepItem = item; // used for click function
                 menuCategoryItem.className = "menu-category-item";
-                menuCategoryItem.innerHTML = createHTMLForItem(item);
+                menuCategoryItem.innerHTML = createHTMLForItem(item, true);
                 $(".menu-category-flex").append(menuCategoryItem);
 
                 // set category name
@@ -238,17 +239,19 @@ function openMenuPage(store) {
 
 let lastLeft = Math.random() < 0.5;
 
-function createHTMLForItem(item) {
+function createHTMLForItem(item, shouldUseImage) {
     let returnHTML;
     let image = ``;
     let information = ``;
     let options = ``;
+    let img = ``;
 
-    information = `<div><section class='information_header'><h1>${item.getItemName()}</h1><span>Price - \$${item.getPrice()}</span></section><section class="information_desc"><h2>${item.getDesc()}</h2><i id="add${item.getItemName().replace(/\s+/g, '')}ToCart" class="fa fa-play fa-3x"></i></section><section> </section></div>`;
+    if (shouldUseImage) {
+        img = `<i id="add${item.getItemName().replace(/\s+/g, '')}ToCart" class="fa fa-play fa-3x"></i>`;
+    }
+
+    information = `<div><section class='information_header'><h1>${item.getItemName()}</h1><span>Price - \$${item.getPrice()}</span></section><section class="information_desc"><h2>${item.getDesc()}</h2>${img}</section><section> </section></div>`;
     image = `<img src="${item.getImg()}" alt="${item.getItemName()} Food Image">`
-
-    // check for options
-
 
     if (!lastLeft) {
         // image goes on left
