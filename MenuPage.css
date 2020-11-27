@@ -145,6 +145,7 @@
     text-align: center;
     padding: 3em;
     border-bottom: 0.25em solid white;
+	cursor: pointer;
 }
 
 .menu-categories-item:hover {
